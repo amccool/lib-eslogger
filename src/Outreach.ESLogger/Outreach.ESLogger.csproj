@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NEST" Version="5.5.0"/>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3"/>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.0.0" />
+  </ItemGroup>
+</Project>
