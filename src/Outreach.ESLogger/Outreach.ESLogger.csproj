@@ -2,12 +2,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    
+    <Title>Outreach Elastic Search Logger</Title>
+    <Authors>Cody Rigney; Outreach Inc</Authors>
+    <Description>An implementation of ILogger that logs to Elastic Search.</Description>
+    <PackageLicenseUrl>https://github.com/OutreachInc/lib-eslogger/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/OutreachInc/lib-eslogger</PackageProjectUrl>
+    <PackageTags>ILogger;Logger;Logs;Logging;Elastic Search</PackageTags>
+    <RepositoryUrl>https://github.com/OutreachInc/lib-eslogger</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NEST" Version="5.5.0"/>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3"/>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.0"/>
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0"/>
-    <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.0.0"/>
   </ItemGroup>
 </Project>

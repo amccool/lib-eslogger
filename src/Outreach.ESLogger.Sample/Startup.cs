@@ -24,13 +24,9 @@ namespace Outreach.ESLogger.Sample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddOptions();
-            services.Configure<ESOptions>(Configuration.GetSection("ElasticSearch"));
-
+            services.ConfigureESLogger(Configuration.GetSection("ElasticSearch"));
+            
             services.AddMvc();
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-            services.AddSingleton<ESClientProvider>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
